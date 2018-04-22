@@ -8,13 +8,32 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>求真 务实 严谨 细心</description>
-    <pubDate>Sun, 22 Apr 2018 10:59:44 GMT</pubDate>
+    <pubDate>Sun, 22 Apr 2018 11:40:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>计算机系统之程序被其它程序翻译成不同的格式</title>
+      <link>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E7%A8%8B%E5%BA%8F%E8%A2%AB%E5%85%B6%E5%AE%83%E7%A8%8B%E5%BA%8F%E7%BF%BB%E8%AF%91%E6%88%90%E4%B8%8D%E5%90%8C%E7%9A%84%E6%A0%BC%E5%BC%8F/</link>
+      <guid>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E7%A8%8B%E5%BA%8F%E8%A2%AB%E5%85%B6%E5%AE%83%E7%A8%8B%E5%BA%8F%E7%BF%BB%E8%AF%91%E6%88%90%E4%B8%8D%E5%90%8C%E7%9A%84%E6%A0%BC%E5%BC%8F/</guid>
+      <pubDate>Sun, 22 Apr 2018 11:04:15 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;一-概览&quot;&gt;&lt;a href=&quot;#一-概览&quot; class=&quot;headerlink&quot; title=&quot;一 概览&quot;&gt;&lt;/a&gt;一 概览&lt;/h3&gt;&lt;p&gt;&amp;emsp;&amp;emsp;上一篇博客中，我们解释了计算机系统中的信息是由位序列和位序列所处的上下文所决定。而本篇博客主要是解释
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;上一篇博客中，我们解释了计算机系统中的信息是由位序列和位序列所处的上下文所决定。而本篇博客主要是解释源程序是怎么被执行的。</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><p>&emsp;&emsp;经典的helloWorld程序是从C语言程序开始的，因为这种形式能够被人读懂。然后，它能直接被计算机识别并执行吗？相信你肯定知道答案是否定的，那么就让我们来看看源程序经历了哪些步骤，最终成为了什么才会让计算机去执行它。</p><p>&emsp;&emsp;为了在系统中运行helloWorld程序，每条C语句都必须被其他程序转化为一系列的低级机器语言指令。然后这些指令按照一种称为 <strong>可执行目标程序</strong> 的格式打好包，并以二进制磁盘文件的形式存放起来。目标程序也被称为 <strong>可执行目标文件</strong>。</p><p>&emsp;&emsp;在Unix系统上，从源程序到目标文件的转化是由 <strong>编译器驱动程序</strong> 完成的。</p><p>&emsp;&emsp;源程序到目标程序经历了 <strong>四</strong> 个阶段,执行这四个阶段（预处理器、编译器、汇编器和链接器）的程序一起构成了 <strong>编译系统</strong>。</p>]]></content:encoded>
+      
+      <comments>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E7%A8%8B%E5%BA%8F%E8%A2%AB%E5%85%B6%E5%AE%83%E7%A8%8B%E5%BA%8F%E7%BF%BB%E8%AF%91%E6%88%90%E4%B8%8D%E5%90%8C%E7%9A%84%E6%A0%BC%E5%BC%8F/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>计算机系统之信息就是位加上下文</title>
-      <link>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF/</link>
-      <guid>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF/</guid>
+      <link>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF%E5%B0%B1%E6%98%AF%E4%BD%8D%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</link>
+      <guid>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF%E5%B0%B1%E6%98%AF%E4%BD%8D%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87/</guid>
       <pubDate>Sun, 22 Apr 2018 09:53:47 GMT</pubDate>
       <description>
       
@@ -25,9 +44,9 @@
       
       </description>
       
-      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;写这篇博客之前，我先推荐一本书-《深入理解计算机系统》给大家吧，这本书是由卡内基-梅隆大学的布莱恩特教授和奥哈拉伦教授所写，由中科院院士梅宏教授和上海交通大学软件学院院长臧赋宇教授作序，这本书的主要读者是计算机科学家、计算机工程师。这本书的目的是解释所有 <strong>计算机系统的本质概念</strong>。</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><p>&emsp;&emsp;我们经常能听到源程序的概念，那么源程序是什么呢？源程序实际上就是一个由值0和1组成的 <strong>位（又称为比特）序列</strong>,8个位被组织成一组，称为字节。每个字节表示程序中的某些文本字符。大部分的现代计算机系统都使用ASCII标准表示文本字符。<br>&emsp;&emsp;源程序的表示方法说明了一个基本思想：系统中所有的信息-包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据，都是由一串比特表示的。区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。比如，在不同的上下文中，一个同样的字节序列可能表示一个整数、浮点数、字符串或者机器指令。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;写这篇博客之前，我先推荐一本书-《深入理解计算机系统》给大家吧，这本书是由卡内基-梅隆大学的布莱恩特教授和奥哈拉伦教授所写，由中科院院士梅宏教授和上海交通大学软件学院院长臧赋宇教授作序，它的主要读者是计算机科学家、计算机工程师。这本书的目的是解释所有 <strong>计算机系统的本质概念</strong>。</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><p>&emsp;&emsp;我们经常能听到源程序的概念，那么源程序（也称源文件）是什么呢？源程序实际上就是一个由值0和1组成的 <strong>位（又称为比特）序列</strong>,8个位被组织成一组，称为字节。每个字节表示程序中的某些文本字符。大部分的现代计算机系统都使用ASCII标准表示文本字符。<br>&emsp;&emsp;源程序的表示方法说明了一个基本思想：系统中所有的信息-包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据，都是由一串比特表示的。区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。比如，在不同的上下文中，一个同样的字节序列可能表示一个整数、浮点数、字符串或者机器指令。</p>]]></content:encoded>
       
-      <comments>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF/#disqus_thread</comments>
+      <comments>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF%E5%B0%B1%E6%98%AF%E4%BD%8D%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87/#disqus_thread</comments>
     </item>
     
     <item>
