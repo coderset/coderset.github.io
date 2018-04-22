@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>求真 务实 严谨 细心</description>
-    <pubDate>Sun, 22 Apr 2018 10:13:38 GMT</pubDate>
+    <pubDate>Sun, 22 Apr 2018 10:59:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;写这篇博客之前，我先推荐一本书-《深入理解计算机系统》给大家吧，这本书是由卡内基-梅隆大学的布莱恩特教授和奥哈拉伦教授所写，由中科院院士梅宏教授和上海交通大学软件学院院长臧赋宇教授作序，这本书的主要读者是计算机科学家、计算机工程师以及那些想通过学习计算机系统的内在运作而能够写出更好程序的人。这本书的目的是解释所有 <strong>计算机系统的本质概念</strong>，并向你展示这些概念是如何影响程序的正确性。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;写这篇博客之前，我先推荐一本书-《深入理解计算机系统》给大家吧，这本书是由卡内基-梅隆大学的布莱恩特教授和奥哈拉伦教授所写，由中科院院士梅宏教授和上海交通大学软件学院院长臧赋宇教授作序，这本书的主要读者是计算机科学家、计算机工程师。这本书的目的是解释所有 <strong>计算机系统的本质概念</strong>。</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><p>&emsp;&emsp;我们经常能听到源程序的概念，那么源程序是什么呢？源程序实际上就是一个由值0和1组成的 <strong>位（又称为比特）序列</strong>,8个位被组织成一组，称为字节。每个字节表示程序中的某些文本字符。大部分的现代计算机系统都使用ASCII标准表示文本字符。<br>&emsp;&emsp;源程序的表示方法说明了一个基本思想：系统中所有的信息-包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据，都是由一串比特表示的。区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。比如，在不同的上下文中，一个同样的字节序列可能表示一个整数、浮点数、字符串或者机器指令。</p>]]></content:encoded>
       
       <comments>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF/#disqus_thread</comments>
     </item>
