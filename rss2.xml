@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>求真 务实 严谨 细心</description>
-    <pubDate>Sun, 22 Apr 2018 11:40:17 GMT</pubDate>
+    <pubDate>Tue, 24 Apr 2018 02:33:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Js之实现“继承”的几种方式</title>
+      <link>http://setcoder.com/2018/04/24/Js%E4%B9%8B%E5%AE%9E%E7%8E%B0%E2%80%9C%E7%BB%A7%E6%89%BF%E2%80%9D%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</link>
+      <guid>http://setcoder.com/2018/04/24/Js%E4%B9%8B%E5%AE%9E%E7%8E%B0%E2%80%9C%E7%BB%A7%E6%89%BF%E2%80%9D%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</guid>
+      <pubDate>Tue, 24 Apr 2018 02:25:14 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;一-概览&quot;&gt;&lt;a href=&quot;#一-概览&quot; class=&quot;headerlink&quot; title=&quot;一 概览&quot;&gt;&lt;/a&gt;一 概览&lt;/h3&gt;&lt;p&gt;&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我将继续与大家分享关于计算机系统基础的相关知识，而此篇
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我将继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 <strong>继承</strong> 模块的一点心得。</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3>]]></content:encoded>
+      
+      <comments>http://setcoder.com/2018/04/24/Js%E4%B9%8B%E5%AE%9E%E7%8E%B0%E2%80%9C%E7%BB%A7%E6%89%BF%E2%80%9D%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>计算机系统之程序被其它程序翻译成不同的格式</title>

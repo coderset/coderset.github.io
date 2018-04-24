@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="求真 务实 严谨 细心">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://setcoder.com/categories/index.html">
+<meta name="description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我将继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Js之实现“继承”的几种方式">
+<meta property="og:url" content="http://setcoder.com/2018/04/24/Js之实现“继承”的几种方式/index.html">
 <meta property="og:site_name" content="setcoder">
-<meta property="og:description" content="求真 务实 严谨 细心">
+<meta property="og:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我将继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 内容">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-21T03:15:37.030Z">
+<meta property="og:updated_time" content="2018-04-24T02:33:21.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="求真 务实 严谨 细心">
+<meta name="twitter:title" content="Js之实现“继承”的几种方式">
+<meta name="twitter:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我将继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 内容">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://setcoder.com/categories/"/>
+  <link rel="canonical" href="http://setcoder.com/2018/04/24/Js之实现“继承”的几种方式/"/>
 
 
 
 
 
-  <title>categories | setcoder</title>
+  <title>Js之实现“继承”的几种方式 | setcoder</title>
   
 
 
@@ -280,33 +280,149 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://setcoder.com/2018/04/24/Js之实现“继承”的几种方式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="setcoder">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="setcoder">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">Js之实现“继承”的几种方式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T10:25:14+08:00">
+                2018-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/04/24/Js之实现“继承”的几种方式/" class="leancloud_visitors" data-flag-title="Js之实现“继承”的几种方式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我将继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 <strong>继承</strong> 模块的一点心得。</p>
+<h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/22/计算机系统之程序被其它程序翻译成不同的格式/" rel="next" title="计算机系统之程序被其它程序翻译成不同的格式">
+                <i class="fa fa-chevron-left"></i> 计算机系统之程序被其它程序翻译成不同的格式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -344,8 +460,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -394,6 +519,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-概览"><span class="nav-number">1.</span> <span class="nav-text">一 概览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-内容"><span class="nav-number">2.</span> <span class="nav-text">二 内容</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
