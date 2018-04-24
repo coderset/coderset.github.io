@@ -89,7 +89,7 @@
 <meta property="og:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://setcoder.com/2018/04/24/原型与“继承”/explicit_mixin.jpeg">
-<meta property="og:updated_time" content="2018-04-24T12:39:37.187Z">
+<meta property="og:updated_time" content="2018-04-24T12:42:42.990Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型与“继承”">
 <meta name="twitter:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
@@ -380,34 +380,8 @@
 <h4 id="5-混入-子类混入父类的内容"><a href="#5-混入-子类混入父类的内容" class="headerlink" title="5.混入:子类混入父类的内容"></a>5.混入:子类混入父类的内容</h4><p> JavaScript的复合类型以 <strong>引用</strong> 的方式传递,不支持拷贝行为。<strong>混入（Mixin）</strong> 以 <strong>手动拷贝</strong> 的方式模拟继承的拷贝行为。</p>
 <p> ####明确混入：<br>（1）定义显示的把一个对象的属性混入另一个对象。<br>（2）实现如下：<br><img src="/2018/04/24/原型与“继承”/explicit_mixin.jpeg" title="明确混入"></p>
 <p>（3）<strong>显示假想多态</strong>:Vehicle.drive.call(this)。因为ES6之前，JavaScript无法实现相对多态（inherit：drive()），所以我们明确地用名称指出Vehicle对象，然后在它上面调用drive()函数。<br>（4）<strong>问题</strong>：<br>&emsp;&emsp;A.技术上讲，函数没有被复制，只是复制了函数的引用；<br>&emsp;&emsp;B.在每一个需要建立 <strong>假想多态</strong> 引用的函数中都需要建立手动链接（Vehicle.drive.call(this)），维护成本高。可以尝试通过它实现 <strong>多重继承</strong>。<br>（5）<strong>结论</strong>：明确混入复杂、难懂、维护成本高，不推荐使用。</p>
-<p>####寄生继承：<br>（1）明确的mixin模式的一个变种，在某种意义上是明确的而在某种意义上是隐含的<br>（2）实现如下：<br>    // “传统的JS类” <code>Vehicle</code><br>    function Vehicle() {<br>        this.engines = 1;<br>    }<br>    Vehicle.prototype.ignition = function() {<br>        console.log( “Turning on my engine.” );<br>    };<br>    Vehicle.prototype.drive = function() {<br>        this.ignition();<br>        console.log( “Steering and moving forward!” );<br>    };</p>
-<pre><code>// “寄生类” `Car`
-function Car() {
-    // 首先, `car`是一个`Vehicle`
-    var car = new Vehicle();
+<p>####寄生继承：<br>（1）明确的mixin模式的一个变种，在某种意义上是明确的而在某种意义上是隐含的<br>（2）实现如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">// “传统的JS类” `Vehicle`</span><br><span class="line">function Vehicle() &#123;</span><br><span class="line">	this.engines = 1;</span><br><span class="line">&#125;</span><br><span class="line">Vehicle.prototype.ignition = function() &#123;</span><br><span class="line">	console.log( &quot;Turning on my engine.&quot; );</span><br><span class="line">&#125;;</span><br><span class="line">Vehicle.prototype.drive = function() &#123;</span><br><span class="line">	this.ignition();</span><br><span class="line">	console.log( &quot;Steering and moving forward!&quot; );</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">// “寄生类” `Car`</span><br><span class="line">function Car() &#123;</span><br><span class="line">	// 首先, `car`是一个`Vehicle`</span><br><span class="line">	var car = new Vehicle();</span><br><span class="line"></span><br><span class="line">	// 现在, 我们修改`car`使它特化</span><br><span class="line">	car.wheels = 4;</span><br><span class="line"></span><br><span class="line">	// 保存一个`Vehicle::drive()`的引用</span><br><span class="line">	var vehDrive = car.drive;</span><br><span class="line"></span><br><span class="line">	// 覆盖 `Vehicle::drive()`</span><br><span class="line">	car.drive = function() &#123;</span><br><span class="line">		vehDrive.call( this );</span><br><span class="line">		console.log( &quot;Rolling on all &quot; + this.wheels + &quot; wheels!&quot; );</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	return car;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var myCar = new Car();</span><br><span class="line"></span><br><span class="line">myCar.drive();</span><br><span class="line">// Turning on my engine.</span><br><span class="line">// Steering and moving forward!</span><br><span class="line">// Rolling on all 4 wheels!</span><br></pre></td></tr></table></figure></p>
 
-    // 现在, 我们修改`car`使它特化
-    car.wheels = 4;
-
-    // 保存一个`Vehicle::drive()`的引用
-    var vehDrive = car.drive;
-
-    // 覆盖 `Vehicle::drive()`
-    car.drive = function() {
-        vehDrive.call( this );
-        console.log( &quot;Rolling on all &quot; + this.wheels + &quot; wheels!&quot; );
-    };
-
-    return car;
-}
-
-var myCar = new Car();
-
-myCar.drive();
-// Turning on my engine.
-// Steering and moving forward!
-// Rolling on all 4 wheels!
-</code></pre>
       
     </div>
     
