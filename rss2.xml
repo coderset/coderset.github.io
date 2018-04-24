@@ -8,25 +8,13 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>求真 务实 严谨 细心</description>
-    <pubDate>Tue, 24 Apr 2018 07:11:27 GMT</pubDate>
+    <pubDate>Tue, 24 Apr 2018 07:37:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>asset</title>
-      <link>http://setcoder.com/2018/04/24/asset/</link>
-      <guid>http://setcoder.com/2018/04/24/asset/</guid>
-      <pubDate>Tue, 24 Apr 2018 07:11:27 GMT</pubDate>
-      <description>
-      
-      </description>
-      
-      <comments>http://setcoder.com/2018/04/24/asset/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>ie不支持startsWith()、endsWith()</title>
-      <link>http://setcoder.com/2018/04/24/ie%E4%B8%8D%E6%94%AF%E6%8C%81startsWith%E5%92%8CendsWith/</link>
-      <guid>http://setcoder.com/2018/04/24/ie%E4%B8%8D%E6%94%AF%E6%8C%81startsWith%E5%92%8CendsWith/</guid>
+      <title>ie不支持startsWith、endsWith</title>
+      <link>http://setcoder.com/2018/04/24/JS%E4%B9%8Bie%E4%B8%8D%E6%94%AF%E6%8C%81startsWith%E3%80%81endsWith/</link>
+      <guid>http://setcoder.com/2018/04/24/JS%E4%B9%8Bie%E4%B8%8D%E6%94%AF%E6%8C%81startsWith%E3%80%81endsWith/</guid>
       <pubDate>Tue, 24 Apr 2018 06:33:36 GMT</pubDate>
       <description>
       
@@ -37,9 +25,9 @@
       
       </description>
       
-      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;今天测试提了一个bug，告诉我某个页面在ie浏览器中出现了问题，借此我把这个问题和解决这个问题的方法跟大家分享一下吧</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><h6 id="1-问题是什么？"><a href="#1-问题是什么？" class="headerlink" title="1.问题是什么？"></a>1.问题是什么？</h6><p>&emsp;&emsp;经过调试脚本，我发现了问题的原因，请看下图：<br></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;今天测试提了一个bug，告诉我某个页面在ie浏览器中出现了问题，借此我把这个问题和解决这个问题的方法跟大家分享一下吧</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><h6 id="1-问题是什么？"><a href="#1-问题是什么？" class="headerlink" title="1.问题是什么？"></a>1.问题是什么？</h6><p>&emsp;&emsp;经过调试脚本，我发现了问题的原因，请看下图：<br><img src="/2018/04/24/JS之ie不支持startsWith、endsWith/ie_endsWith.jpeg" title="ie中endsWith问题截图"></p>]]></content:encoded>
       
-      <comments>http://setcoder.com/2018/04/24/ie%E4%B8%8D%E6%94%AF%E6%8C%81startsWith%E5%92%8CendsWith/#disqus_thread</comments>
+      <comments>http://setcoder.com/2018/04/24/JS%E4%B9%8Bie%E4%B8%8D%E6%94%AF%E6%8C%81startsWith%E3%80%81endsWith/#disqus_thread</comments>
     </item>
     
     <item>
@@ -97,6 +85,25 @@
       <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;写这篇博客之前，我先推荐一本书-《深入理解计算机系统》给大家吧，这本书是由卡内基-梅隆大学的布莱恩特教授和奥哈拉伦教授所写，由中科院院士梅宏教授和上海交通大学软件学院院长臧赋宇教授作序，它的主要读者是计算机科学家、计算机工程师。这本书的目的是解释所有 <strong>计算机系统的本质概念</strong>。</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><p>&emsp;&emsp;我们经常能听到源程序的概念，那么源程序（也称源文件）是什么呢？源程序实际上就是一个由值0和1组成的 <strong>位（又称为比特）序列</strong>,8个位被组织成一组，称为字节。每个字节表示程序中的某些文本字符。大部分的现代计算机系统都使用ASCII标准表示文本字符。<br>&emsp;&emsp;源程序的表示方法说明了一个基本思想：系统中所有的信息-包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据，都是由一串比特表示的。区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。比如，在不同的上下文中，一个同样的字节序列可能表示一个整数、浮点数、字符串或者机器指令。</p>]]></content:encoded>
       
       <comments>http://setcoder.com/2018/04/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B9%8B%E4%BF%A1%E6%81%AF%E5%B0%B1%E6%98%AF%E4%BD%8D%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>setcoder简介</title>
+      <link>http://setcoder.com/2018/04/22/setcoder%E7%AE%80%E4%BB%8B/</link>
+      <guid>http://setcoder.com/2018/04/22/setcoder%E7%AE%80%E4%BB%8B/</guid>
+      <pubDate>Sun, 22 Apr 2018 04:39:56 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h3 id=&quot;一-定义&quot;&gt;&lt;a href=&quot;#一-定义&quot; class=&quot;headerlink&quot; title=&quot;一 定义&quot;&gt;&lt;/a&gt;一 定义&lt;/h3&gt;&lt;p&gt;&amp;emsp;&amp;emsp;setcoder是一个由多人共同写作的博客平台。目前已经拥有11名成员，其中包含10名在职工程师（J
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="一-定义"><a href="#一-定义" class="headerlink" title="一 定义"></a>一 定义</h3><p>&emsp;&emsp;setcoder是一个由多人共同写作的博客平台。目前已经拥有11名成员，其中包含10名在职工程师（Java、JavaScript、Android、Python等方向）、1名在校研究生。<br></p><h3 id="二-setcoder由来"><a href="#二-setcoder由来" class="headerlink" title="二 setcoder由来"></a>二 setcoder由来</h3><p>&emsp;&emsp;我们选取了柯林斯高阶英汉词典中 <strong>set</strong> 的一个名词的释义， <strong>“(经常碰面或趣味相同的)一伙(或一帮、一群)人”</strong> , <strong>coder</strong> 顾名思义就是 <strong>“编程者”</strong>，这是 <strong>setcoder</strong> 的由来，<strong>“一伙志同道合的程序员”</strong>。</p><h3 id="三-写作特点"><a href="#三-写作特点" class="headerlink" title="三 写作特点"></a>三 写作特点</h3><p>&emsp;&emsp;<strong>求真</strong>、<strong>严谨</strong>、<strong>简洁</strong>、<strong>细心</strong>。<br>&emsp;&emsp;我们务必让每一篇文章的内容与语言规范的定义保持高度的一致性，这既是写博客的一致性原则，也是对读者的一种责任态度。我们要求文章的语法格式严谨，语句通顺，避免出现语法上的错误。文章的内容力求简洁，它或是一篇长篇大论，亦或是编程语言上一个很小的点，这无论是对写作的人，还是阅读的人来说都将是福音。细心是每一位博客作者都应关注的点，写博客有时候会出现错别字、配图错误、代码错误，请读者谅解，我们尽量去规避这些错误，同时我们将深深感激那些在评论中告诉我们的读者。</p>]]></content:encoded>
+      
+      <comments>http://setcoder.com/2018/04/22/setcoder%E7%AE%80%E4%BB%8B/#disqus_thread</comments>
     </item>
     
   </channel>
