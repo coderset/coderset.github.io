@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="setcoder">
 <meta property="og:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-24T09:00:15.764Z">
+<meta property="og:updated_time" content="2018-04-24T09:26:58.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型与“继承”">
 <meta name="twitter:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
@@ -371,7 +371,9 @@
 
       
         <h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 <strong>继承</strong> 模块的一点心得。</p>
-<h3 id="二-面向对象回顾"><a href="#二-面向对象回顾" class="headerlink" title="二 面向对象回顾"></a>二 面向对象回顾</h3><h4 id="1-面向类编程"><a href="#1-面向类编程" class="headerlink" title="1.面向类编程"></a>1.面向类编程</h4><p>&emsp;&emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。<br>&emsp;&emsp;类的 <strong>定义</strong>：在面向对象编程中，类是一种 <strong>代码组织结构形式</strong>，一种从真实世界到软件设计的建模方法。<br>&emsp;&emsp;类的 <strong>组织形式</strong>：面向对象或者面向类编程强调 <strong>数据</strong> 和 <strong>操作数据的行为</strong> 应该 <strong>封装</strong> 在一起,在计算机科学中我们称为 <strong>数据结构</strong>。</p>
+<h3 id="二-面向对象回顾"><a href="#二-面向对象回顾" class="headerlink" title="二 面向对象回顾"></a>二 面向对象回顾</h3><h4 id="1-面向类编程"><a href="#1-面向类编程" class="headerlink" title="1.面向类编程"></a>1.面向类编程</h4><p>&emsp;&emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。<br>&emsp;&emsp;类的 <strong>定义</strong>：在面向对象编程中，类是一种 <strong>代码组织结构形式</strong>，一种从真实世界到软件设计的建模方法。<br>&emsp;&emsp;类的 <strong>组织形式</strong>：面向对象或者面向类编程强调 <strong>数据</strong> 和 <strong>操作数据的行为</strong> 应该 <strong>封装</strong> 在一起,在正式计算机科学中我们称为 <strong>数据结构</strong>。</p>
+<h4 id="2-类与23种高级设计模式"><a href="#2-类与23种高级设计模式" class="headerlink" title="2.类与23种高级设计模式"></a>2.类与23种高级设计模式</h4><p>&emsp;&emsp;类是面向对象的 <strong>底层设计模式</strong>，它是面向对象23种高级设计模式的 <strong>底层机制</strong>。<br>&emsp;&emsp;你或许还听说过 <strong>过程化编程</strong>,一种不借助高级抽象，仅仅由 <strong>过程（函数）调用</strong> 来组织代码的编程方式。程序语言中，Java只支持面向类编程，C/C++/Php既支持过程化编程，也支持面向类编程。</p>
+<h4 id="3-类的机制"><a href="#3-类的机制" class="headerlink" title="3.类的机制"></a>3.类的机制</h4><p>&emsp;&emsp;在类的设计模式之上，它为我们提供了 <strong>实例化</strong>、 <strong>继承</strong>、<strong>多态</strong>3中机制。</p>
 
       
     </div>
@@ -534,7 +536,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-概览"><span class="nav-number">1.</span> <span class="nav-text">一 概览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-面向对象回顾"><span class="nav-number">2.</span> <span class="nav-text">二 面向对象回顾</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-面向类编程"><span class="nav-number">2.1.</span> <span class="nav-text">1.面向类编程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-概览"><span class="nav-number">1.</span> <span class="nav-text">一 概览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-面向对象回顾"><span class="nav-number">2.</span> <span class="nav-text">二 面向对象回顾</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-面向类编程"><span class="nav-number">2.1.</span> <span class="nav-text">1.面向类编程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-类与23种高级设计模式"><span class="nav-number">2.2.</span> <span class="nav-text">2.类与23种高级设计模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-类的机制"><span class="nav-number">2.3.</span> <span class="nav-text">3.类的机制</span></a></li></ol></li></ol></div>
             
 
           </div>
