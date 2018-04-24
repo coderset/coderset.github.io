@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>求真 务实 严谨 细心</description>
-    <pubDate>Tue, 24 Apr 2018 06:49:29 GMT</pubDate>
+    <pubDate>Tue, 24 Apr 2018 06:53:40 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -25,7 +25,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;今天测试提了一个bug，告诉我某个页面在ie浏览器中出现了问题，借此我把这个问题和解决这个问题的方法跟大家分享一下吧</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><h4 id="1-问题是什么？"><a href="#1-问题是什么？" class="headerlink" title="1.问题是什么？"></a>1.问题是什么？</h4><p>&emsp;&emsp;经过调试脚本，我发现了问题的原因，请看下图：<br><img src="../assets/ie_endsWith.jpeg" alt="alt text" title="ie endWith问题截图"></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="一-概览"><a href="#一-概览" class="headerlink" title="一 概览"></a>一 概览</h3><p>&emsp;&emsp;今天测试提了一个bug，告诉我某个页面在ie浏览器中出现了问题，借此我把这个问题和解决这个问题的方法跟大家分享一下吧</p><h3 id="二-内容"><a href="#二-内容" class="headerlink" title="二 内容"></a>二 内容</h3><h6 id="1-问题是什么？"><a href="#1-问题是什么？" class="headerlink" title="1.问题是什么？"></a>1.问题是什么？</h6><p>&emsp;&emsp;经过调试脚本，我发现了问题的原因，请看下图：<br><img src="../assets/ie_endsWith.jpeg" alt="Alt text" title="ie endWith问题截图"></p>]]></content:encoded>
       
       <comments>http://setcoder.com/2018/04/24/Es6-startsWith%E6%96%B9%E6%B3%95%E5%88%86%E6%9E%90/#disqus_thread</comments>
     </item>
