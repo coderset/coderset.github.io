@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="setcoder">
 <meta property="og:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-25T07:59:35.145Z">
+<meta property="og:updated_time" content="2018-04-25T08:14:56.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型与“继承”">
 <meta name="twitter:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
@@ -424,7 +424,9 @@
 <p><strong>4 <strong>proto</strong></strong>：</p>
 <p>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Foo() &#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = new Foo();</span><br><span class="line"></span><br><span class="line">a.__proto__ === Foo.prototype  // true</span><br></pre></td></tr></table></figure>
-<p>代码分析：</p>
+<p>代码分析：<br>a：<strong>proto</strong>属性在ES6被标准化；<br>b：<strong>proto</strong>属性跟 <strong>constructor</strong>属性类似，它不存在实例对象中。constructor属性存在于 <strong>原型链</strong>中,<strong>proto</strong>存在于Object.prototype中。<br>c：<strong>proto</strong>看起来像一个属性，但实际上将它看做是一个getter/setter更合适。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Object.defineProperty( Object.prototype, &quot;__proto__&quot;, &#123;</span><br><span class="line">    get: function() &#123;</span><br><span class="line">        return Object.getPrototypeOf( this );</span><br><span class="line">    &#125;,</span><br><span class="line">    set: function(o) &#123;</span><br><span class="line">        // setPrototypeOf(..) as of ES6</span><br><span class="line">        Object.setPrototypeOf( this, o );</span><br><span class="line">        return o;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; );</span><br></pre></td></tr></table></figure>
+<p><strong>特别注意</strong>：<br></p>
 
       
     </div>
