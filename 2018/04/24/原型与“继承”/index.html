@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="setcoder">
 <meta property="og:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-25T07:05:02.432Z">
+<meta property="og:updated_time" content="2018-04-25T07:59:35.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原型与“继承”">
 <meta name="twitter:description" content="一 概览&amp;emsp;&amp;emsp;说明一下，此篇文章是临时穿入的，后续的几篇文章我应该继续与大家分享关于计算机系统基础的相关知识，而此篇文章是我通过阅读《JavaScript 高级程序设计》和《你不知道的JavaScript》中关于 继承 模块的一点心得。 二 面向对象回顾1.面向类编程&amp;emsp;&amp;emsp;你是否还记得大学里面刚学C++的时候关于面向对象的介绍呢，让我们一块来回顾一下吧。&amp;ems">
@@ -413,7 +413,18 @@
 <p><strong>1 instanceOf</strong>:</p>
 <p>代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Foo() &#123;</span><br><span class="line">    //...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = new Foo();</span><br><span class="line"></span><br><span class="line">a instanceOf Foo  // true</span><br></pre></td></tr></table></figure>
-<p>代码分析：<br>a: instanceOf <em>机制</em> ，在实例对象（a）的原型链中，是否有Foo.prototype；<br>b: 需要拥有可用于检测的构造函数（Foo)；<br>c: 无法判断实例对象间（比如a，b）是否通过[prototype]链相互关联。</p>
+<p>代码分析：<br>a: instanceOf <strong>机制</strong>，在实例对象（a）的原型链中，是否有Foo.prototype；<br>b: 需要用于可检测的构造函数（Foo）;<br>c: 无法判断实例对象间（比如a，b）是否通过[prototype]链相互关联。</p>
+<p><strong>2 isPrototypeOf [[prototype]]反射</strong>：</p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function Foo() &#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = new Foo();</span><br><span class="line"></span><br><span class="line">Foo.prototype.isPrototypeOf(a);  // true</span><br><span class="line"></span><br><span class="line">// 对象b是否在a的[[prototype]]链出现过</span><br><span class="line">b.isPrototypeOf(a);</span><br></pre></td></tr></table></figure>
+<p><strong>代码分析</strong>：<br>a：在实例对象（a）的原型链中，是否有Foo.prototype；<br>b：需要用于可检测的构造函数（Foo）；<br>c：<strong>可以</strong>判断对象间是否通过[prototype]链相互关联。</p>
+<p><strong>3 getPrototypeOf 获取原型链</strong>：</p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Foo() &#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = new Foo();</span><br><span class="line"></span><br><span class="line">Object.getPrototypeOf(a)  // 查看constructor属性</span><br></pre></td></tr></table></figure>
+<p><strong>4 <strong>proto</strong></strong>：</p>
+<p>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function Foo() &#123;</span><br><span class="line">    // ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = new Foo();</span><br><span class="line"></span><br><span class="line">a.__proto__ === Foo.prototype  // true</span><br></pre></td></tr></table></figure>
+<p>代码分析：</p>
 
       
     </div>
